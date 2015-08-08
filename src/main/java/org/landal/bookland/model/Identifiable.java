@@ -1,10 +1,10 @@
 package org.landal.bookland.model;
 
-public interface Identifiable {
+public interface Identifiable<T> {
 
     /**
      * @return The primary key, or ID, of this entity
      */
-    Long getId();
+    T getId();
 
 }

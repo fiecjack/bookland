@@ -38,6 +38,12 @@ public class ResourcesProvider {
     @PersistenceContext
     private EntityManager em;
 
+    /**
+     * Logger producer.
+     *
+     * @param injectionPoint
+     * @return
+     */
     @Produces
     public Logger produceLog(InjectionPoint injectionPoint) {
         return Logger.getLogger(injectionPoint.getMember().getDeclaringClass().getName());
